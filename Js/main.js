@@ -1,18 +1,21 @@
-// Hide splash screen after 4 seconds and scroll to home
+// Prevent scrolling during splash screen
+document.documentElement.style.overflow = 'hidden';
+document.body.style.overflow = 'hidden';
+
+// Hide splash screen after 4 seconds and start from home
 window.addEventListener('load', function () {
-    // Prevent scroll during splash screen
-    document.body.style.overflow = 'hidden';
+    // Scroll to top
     window.scrollTo(0, 0);
     
     setTimeout(() => {
         const splashScreen = document.getElementById('splash-screen');
         if (splashScreen) {
             splashScreen.classList.add('fade-out');
+            
+            // Allow scrolling after splash fades out
+            document.documentElement.style.overflow = 'auto';
+            document.body.style.overflow = 'auto';
         }
-        
-        // Allow scroll and go to home after splash ends
-        document.body.style.overflow = 'auto';
-        window.scrollTo(0, 0);
     }, 4000);
 });
 
