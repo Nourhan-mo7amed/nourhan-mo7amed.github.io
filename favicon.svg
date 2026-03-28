@@ -1,0 +1,29 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .logo-path { fill: none; stroke: #31b0b0; stroke-width: 0.8; stroke-linecap: round; stroke-linejoin: round; }
+            .logo-frame { stroke-width: 0.4; opacity: 0.2; }
+            .monogram-skeleton { stroke-width: 2; stroke: #52ead6; filter: drop-shadow(0 0 10px rgba(82, 234, 214, 0.4)); }
+            .logo-fragment { fill: #52ead6; fill-opacity: 0.05; stroke: none; }
+            .logo-node { fill: #ffffff; opacity: 0.8; filter: drop-shadow(0 0 5px #ffffff); }
+        </style>
+    </defs>
+    <!-- Background Geometric Grid/Frame -->
+    <path class="logo-path logo-frame" d="M50 5 L90 25 V75 L50 95 L10 75 V25 Z" />
+    
+    <!-- Main Monogram Structural Lines (N and M) -->
+    <path class="logo-path monogram-skeleton" d="M25 70 V30 L50 55 L75 30 V70" />
+    <path class="logo-path monogram-skeleton" d="M25 70 L50 30 V70" />
+    
+    <!-- Glass/Fragment Layer (Fills) -->
+    <path class="logo-fragment" d="M50 30 L75 10 L90 25 L50 55 Z" />
+    <path class="logo-fragment" d="M10 25 L50 55 L25 70 L10 75 Z" />
+    
+    <!-- Circuit Nodes at intersections -->
+    <circle class="logo-node" cx="25" cy="70" r="1.5" />
+    <circle class="logo-node" cx="25" cy="30" r="1.5" />
+    <circle class="logo-node" cx="50" cy="55" r="1.5" />
+    <circle class="logo-node" cx="75" cy="30" r="1.5" />
+    <circle class="logo-node" cx="75" cy="70" r="1.5" />
+    <circle class="logo-node" cx="50" cy="30" r="1.5" />
+</svg>

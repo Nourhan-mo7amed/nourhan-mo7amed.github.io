@@ -62,7 +62,7 @@ document.querySelectorAll('.fade-in').forEach(element => {
 });
 
 // Typing effect for hero section
-const texts = ['Cloud & DevOps Engineer', 'AWS Solutions Architect', 'Azure Infrastructure Specialist', 'CI/CD Automation Expert'];
+const texts = ['Flutter Developer', 'UI/UX Designer','software Engineer'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
