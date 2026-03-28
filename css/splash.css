@@ -1,0 +1,162 @@
+/* Splash Screen Styles */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 0.8s ease, visibility 0.8s;
+}
+
+#splash-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.geometric-logo.ultra-premium {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    animation: floatLogo 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(49, 176, 176, 0.2));
+}
+
+@keyframes floatLogo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.logo-path {
+    fill: none;
+    stroke: #31b0b0;
+    stroke-width: 0.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+.logo-frame {
+    stroke-width: 0.4;
+    opacity: 0.2;
+    animation: drawUltra 3s ease-out forwards;
+}
+
+.monogram-skeleton {
+    stroke-width: 2;
+    stroke: #52ead6;
+    filter: drop-shadow(0 0 10px rgba(82, 234, 214, 0.4));
+    animation: drawUltra 2s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.5s;
+}
+
+.monogram-skeleton-n {
+    stroke-width: 1.2;
+    stroke: #31b0b0;
+    animation-delay: 1s;
+}
+
+.logo-fragment {
+    fill: #52ead6;
+    fill-opacity: 0;
+    stroke: none;
+    animation: fadeInFragment 1.5s ease forwards 1.8s;
+}
+
+@keyframes fadeInFragment {
+    to {
+        fill-opacity: 0.05;
+    }
+}
+
+.logo-node {
+    fill: #ffffff;
+    opacity: 0;
+    filter: drop-shadow(0 0 5px #ffffff);
+    animation: pulseNode 1.5s ease-in-out infinite alternate 2.2s;
+}
+
+@keyframes pulseNode {
+    0% {
+        opacity: 0.2;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+.logo-scanner {
+    opacity: 0;
+    animation: scanPulse 4s linear infinite 2s;
+}
+
+@keyframes scanPulse {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes drawUltra {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Loader bar redesign - Chic */
+.loader-bar {
+    width: 200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.02);
+    margin: 60px auto 0;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.6;
+}
+
+.loader-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, transparent, #31b0b0, #ffffff, #31b0b0, transparent);
+    animation: progressLoad 3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes progressLoad {
+    to {
+        width: 100%;
+    }
+}

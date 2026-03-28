@@ -1,3 +1,21 @@
+// Hide splash screen after 4 seconds and scroll to home
+window.addEventListener('load', function () {
+    // Prevent scroll during splash screen
+    document.body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
+    
+    setTimeout(() => {
+        const splashScreen = document.getElementById('splash-screen');
+        if (splashScreen) {
+            splashScreen.classList.add('fade-out');
+        }
+        
+        // Allow scroll and go to home after splash ends
+        document.body.style.overflow = 'auto';
+        window.scrollTo(0, 0);
+    }, 4000);
+});
+
 // Navbar scroll effect
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');

@@ -4,19 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelrahman Elbahnasy | Cloud & DevOps Engineer</title>
+    <title>Nourhan Maghawry | Flutter Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/splash.css">
 </head>
 
 <body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="logo-container">
+            <svg class="geometric-logo ultra-premium" viewBox="0 0 100 100">
+                <!-- Background Geometric Grid/Frame -->
+                <path class="logo-path logo-frame" d="M50 5 L90 25 V75 L50 95 L10 75 V25 Z" />
+
+                <!-- Main Monogram Structural Lines (N and M) -->
+                <path class="logo-path monogram-skeleton" d="M25 70 V30 L50 55 L75 30 V70" /> <!-- M -->
+                <path class="logo-path monogram-skeleton monogram-skeleton-n" d="M25 70 L50 30 V70" /> <!-- N logic -->
+
+                <!-- Glass/Fragment Layer (Fills) -->
+                <path class="logo-fragment" d="M50 30 L75 10 L90 25 L50 55 Z" />
+                <path class="logo-fragment" d="M10 25 L50 55 L25 70 L10 75 Z" />
+
+                <!-- Circuit Nodes at intersections -->
+                <circle class="logo-node" cx="25" cy="70" r="1.5" />
+                <circle class="logo-node" cx="25" cy="30" r="1.5" />
+                <circle class="logo-node" cx="50" cy="55" r="1.5" />
+                <circle class="logo-node" cx="75" cy="30" r="1.5" />
+                <circle class="logo-node" cx="75" cy="70" r="1.5" />
+                <circle class="logo-node" cx="50" cy="30" r="1.5" />
+
+                <!-- Scanning Light Line -->
+                <rect class="logo-scanner" x="0" y="0" width="100" height="2" fill="url(#scannerGradient)" />
+
+                <defs>
+                    <linearGradient id="scannerGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="transparent" />
+                        <stop offset="50%" stop-color="#52ead6" stop-opacity="0.8" />
+                        <stop offset="100%" stop-color="transparent" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand gradient-text" href="#">AE</a>
+            <a class="navbar-brand" href="#">
+                <svg class="navbar-logo" viewBox="0 0 100 100" width="45" height="45">
+                    <!-- Background Geometric Grid/Frame -->
+                    <path class="logo-path logo-frame" d="M50 5 L90 25 V75 L50 95 L10 75 V25 Z" />
+
+                    <!-- Main Monogram Structural Lines (N and M) -->
+                    <path class="logo-path monogram-skeleton" d="M25 70 V30 L50 55 L75 30 V70" /> <!-- M -->
+                    <path class="logo-path monogram-skeleton monogram-skeleton-n" d="M25 70 L50 30 V70" />
+                    <!-- N logic -->
+
+                    <!-- Glass/Fragment Layer (Fills) -->
+                    <path class="logo-fragment" d="M50 30 L75 10 L90 25 L50 55 Z" />
+                    <path class="logo-fragment" d="M10 25 L50 55 L25 70 L10 75 Z" />
+
+                    <!-- Circuit Nodes at intersections -->
+                    <circle class="logo-node" cx="25" cy="70" r="1.5" />
+                    <circle class="logo-node" cx="25" cy="30" r="1.5" />
+                    <circle class="logo-node" cx="50" cy="55" r="1.5" />
+                    <circle class="logo-node" cx="75" cy="30" r="1.5" />
+                    <circle class="logo-node" cx="75" cy="70" r="1.5" />
+                    <circle class="logo-node" cx="50" cy="30" r="1.5" />
+                </svg>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,9 +88,8 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -37,25 +99,31 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
-                    <h1>Hi, I'm <span class="gradient-text">Abdelrahman Elbahnasy</span></h1>
-                    <h2>Cloud & DevOps Engineer</h2>
-                    <p>Specializing in designing secure, scalable cloud infrastructures on AWS & Azure. Passionate about
-                        automation, system reliability, and building production-ready environments.</p>
+                    <p class="hero-prefix">Hello, I'm</p>
+                    <h1 class="hero-name"><span class="name-first">Nourhan</span> <span
+                            class="name-last">Maghawry</span></h1>
+                    <h2 class="typewriter-text"></h2>
+                    <p>Highly skilled Flutter Developer dedicated to building high-performance, cross-platform mobile
+                        applications with clean code and exceptional user experiences.</p>
                     <div class="mb-4">
                         <a href="#projects" class="btn btn-custom btn-primary-custom me-3">View Projects</a>
-                        <a href="https://drive.google.com/file/d/1fYl9kYJHw_CnOjCuDAvXe2yXXa4mCWGD/view?usp=drive_link"
-                            target="_blank" class="btn btn-custom btn-outline-custom">ShowCV</a>
+                        <a href="Nourhan Maghawry_flutter dev.pdf" target="_blank"
+                            class="btn btn-custom btn-outline-custom">ShowCV</a>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/AbdelrahmanElbahnsy" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/abdelrahmanelbahnsy/" target="_blank"><i
+                        <a href="https://github.com/Nourhan-mo7amed" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nour-maghawry/" target="_blank"><i
                                 class="fab fa-linkedin"></i></a>
-                        <a href="mailto:abdelrahmanelbahnsy19@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:+201028977915"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:nourhan.moh71@gmail.com"><i class="fas fa-envelope"></i></a>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -64,18 +132,34 @@
                             <div class="image-bg-circle circle-1"></div>
                             <div class="image-bg-circle circle-2"></div>
                             <div class="image-bg-circle circle-3"></div>
-                            <div class="profile-image">
-                                <img src="./img/Bahnsy.png" alt="Abdelrahman Elbahnasy" id="profileImg">
+                            <div class="decorative-shapes">
+                                <div class="shape shape-ring ring-1"></div>
+                                <div class="shape shape-ring ring-2"></div>
+                                <div class="shape shape-dots"></div>
                             </div>
+                            <div class="profile-image">
+                                <img src="./img/nour.png" alt="Nourhan Maghawry" id="profileImg">
+                            </div>
+                            <!-- Delicate sparkles replacing colored nodes -->
+                            <div class="sparkle sparkle-1"></div>
+                            <div class="sparkle sparkle-2"></div>
+                            <div class="sparkle sparkle-3"></div>
+                            <div class="sparkle sparkle-4"></div>
+                            <div class="sparkle sparkle-5"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="fade-in">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">About Me</h2>
@@ -83,21 +167,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-card fade-in">
-                        <h4 class="gradient-text mb-3">Cloud & DevOps Engineer</h4>
+                        <h4 class="gradient-text mb-3">Flutter Developer</h4>
                         <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">
-                            I am an IT Infrastructure Engineer with hands-on experience in Cloud Computing, Systems
-                            Administration, Networking, and DevOps automation. I specialize in designing secure,
-                            scalable, and production-ready environments across both cloud and on-premise
-                            infrastructures.
+                            I am a dedicated Flutter Developer with a strong academic foundation in Computer Science
+                            from Mansoura University. I specialize in architecting high-performance, cross-platform
+                            mobile applications that prioritize seamless user experiences and robust functionality.
                             <br><br>
-                            Through practical experience with AWS, Microsoft Azure, Windows Server, and Linux systems,
-                            I have built and automated infrastructure using modern tools such as Docker, Kubernetes,
-                            Terraform, and CI/CD pipelines. My focus is on reliability, performance optimization,
-                            security best practices, and infrastructure automation.
+                            My expertise lies in translating complex requirements into elegant, maintainable code using
+                            Dart and the Flutter framework. I have a proven track record of implementing scalable state
+                            management solutions (provider & Bloc), integrating sophisticated RESTful APIs, and managing
+                            complex data architectures with both local and cloud-based databases.
                             <br><br>
-                            I am passionate about building real-world solutions, continuously improving my
-                            technical expertise, and working on projects that bridge the gap between infrastructure,
-                            cloud architecture, and system engineering.
+                            Driven by technological innovation, I am committed to continuous learning and staying at the
+                            forefront of mobile development trends. My goal is to bridge the gap between business
+                            objectives and user needs through exceptional digital engineering.
                         </p>
                     </div>
                 </div>
@@ -106,7 +189,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="fade-in">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Education</h2>
@@ -115,7 +198,7 @@
             </div>
             <div class="row">
                 <!-- University -->
-                <div class="col-lg-6 fade-in">
+                <div class="col-lg-12 fade-in">
                     <div class="education-card">
                         <h5><i class="fas fa-university gradient-text me-2"></i>Mansoura University</h5>
                         <p class="timeline-date">Bachelor of Computer Science | 2023 - 2026 (Expected)</p>
@@ -131,483 +214,306 @@
                     </div>
                 </div>
 
-                <!-- React.js Diploma -->
-                <div class="col-lg-6 fade-in">
-                    <div class="education-card">
-                        <h5><i class="fas fa-certificate gradient-text me-2"></i>AWS Cloud & Solutions Architect Trainee
-                        </h5>
-                        <p class="timeline-date">National Telecommunication Institute (NTI) | 2025</p>
-                        <ul style="color: rgba(255, 255, 255, 0.7);">
-                            <li>Designed and deployed AWS cloud environments including EC2, S3, IAM, and VPC</li>
-                            <li>Implemented scalable architectures with load balancing and secure network segmentation
-                            </li>
-                            <li>Applied identity and access management best practices for secure cloud operations</li>
-                            <li>Worked on real-world scenarios involving high availability and resource optimization
-                            </li>
-                            <li> Gained hands-on experience in cloud architecture design and infrastructure provisioning
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
-
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Technical Skills</h2>
-            </div>
-            <div class="row">
-                <!-- Cloud Platforms -->
-                <div class="col-lg-4 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-cloud me-2 gradient-text"></i>Cloud Platforms</h4>
-                        <div>
-                            <span class="skill-badge">AWS</span>
-                            <span class="skill-badge">Microsoft Azure</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Infrastructure & Virtualization -->
-                <div class="col-lg-4 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-network-wired me-2 gradient-text"></i>Infrastructure & Virtualization</h4>
-                        <div>
-                            <span class="skill-badge">Infrastructure Design</span>
-                            <span class="skill-badge">Virtual Machines</span>
-                            <span class="skill-badge">Hyper-V</span>
-                            <span class="skill-badge">System Deployment</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- DevOps & Automation -->
-                <div class="col-lg-4 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-infinity me-2 gradient-text"></i>DevOps & Automation</h4>
-                        <div>
-                            <span class="skill-badge">Docker</span>
-                            <span class="skill-badge">Kubernetes</span>
-                            <span class="skill-badge">Terraform</span>
-                            <span class="skill-badge">Ansible</span>
-                            <span class="skill-badge">Jenkins</span>
-                            <span class="skill-badge">GitHub Actions</span>
-                            <span class="skill-badge">CI/CD Pipelines</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <!-- Systems Administration -->
-                <div class="col-lg-4 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-server me-2 gradient-text"></i>Systems Administration</h4>
-                        <div>
-                            <span class="skill-badge">Windows Server (AD, DNS, DHCP, GPO)</span>
-                            <span class="skill-badge">Linux (Ubuntu, RedHat)</span>
-                            <span class="skill-badge">User & Permission Mgmt</span>
-                            <span class="skill-badge">Service Configuration</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Networking -->
-                <div class="col-lg-4 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-globe me-2 gradient-text"></i>Networking</h4>
-                        <div>
-                            <span class="skill-badge">Routing & Switching</span>
-                            <span class="skill-badge">VLANs</span>
-                            <span class="skill-badge">Subnetting</span>
-                            <span class="skill-badge">ACLs</span>
-                            <span class="skill-badge">Network Troubleshooting</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Programming & Scripting -->
-                <div class="col-lg-4 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-code me-2 gradient-text"></i>Programming & Scripting</h4>
-                        <div>
-                            <span class="skill-badge">Python</span>
-                            <span class="skill-badge">Bash</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <!-- Tools -->
-                <div class="col-lg-12 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-tools me-2 gradient-text"></i>Tools</h4>
-                        <div>
-                            <span class="skill-badge">Git</span>
-                            <span class="skill-badge">GitHub</span>
-                            <span class="skill-badge">Cisco Packet Tracer</span>
-                            <span class="skill-badge">Azure Portal</span>
-                            <span class="skill-badge">AWS Console</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-12 fade-in">
-                    <div class="skill-card">
-                        <h4><i class="fas fa-users me-2 gradient-text"></i>Soft Skills</h4>
-                        <div>
-                            <span class="skill-badge">Problem Solving</span>
-                            <span class="skill-badge">
-
-
-                                Self-Learning</span>
-                            <span class="skill-badge">Technical Communication
-
-                            </span>
-                            <span class="skill-badge">Team Collaboration
-
-                            </span>
-                            <span class="skill-badge">Decision-Making</span>
-                            <span class="skill-badge">Time Management</span>
-                            <span class="skill-badge">Attention to Detail
-                            </span>
-                            <span class="skill-badge">Analytical Thinking
-                            </span>
-                            <span class="skill-badge">Adaptability</span>
-                            <span class="skill-badge">Critical Thinking
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Experience & Certifications</h2>
-            </div>
-            <div class="row">
-                <!-- AWS Cloud -->
-                <div class="col-lg-6 fade-in">
-                    <div class="timeline-item">
-                        <h5><i class="fas fa-briefcase gradient-text me-2"></i>AWS Cloud & Solutions Architect Trainee
-                        </h5>
-                        <p class="timeline-date">National Telecommunication Institute (NTI) | 2025</p>
-                        <p class="timeline-date">Certificate: <a
-                                href="https://drive.google.com/file/d/1vk71z2Nl3mlMJbEX4HjT87eb3NzbBNCC/view?usp=drive_link"
-                                target="_blank" class="btn btn-primary">View Certificate</a></p>
-                        <ul style="color: rgba(255, 255, 255, 0.7);">
-                            <li>Designed and deployed AWS cloud environments including EC2, S3, IAM, and VPC</li>
-                            <li>Implemented scalable architectures with load balancing and secure network segmentation
-                            </li>
-                            <li>Applied identity and access management best practices for secure cloud operations</li>
-                            <li>Worked on real-world scenarios involving high availability and resource optimization
-                            </li>
-                            <li>Gained hands-on experience in cloud architecture design and infrastructure provisioning
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Azure Cloud -->
-                <div class="col-lg-6 fade-in">
-                    <div class="timeline-item">
-                        <h5><i class="fas fa-briefcase gradient-text me-2"></i>Azure Cloud Trainee (AZ-900 & AZ-104)
-                        </h5>
-                        <p class="timeline-date">Training Program with Mohamed Zohdy | 2025</p>
-                        <p class="timeline-date">Certificate: <a
-                                href="https://drive.google.com/drive/folders/1cwOM-hoj2byAjnwwoek2GDtFCKjSIZHl?usp=drive_link"
-                                target="_blank" class="btn btn-primary">View Certificate</a></p>
-                        <ul style="color: rgba(255, 255, 255, 0.7);">
-                            <li>Deployed and managed Azure Virtual Machines, Virtual Networks (VNets), and Network
-                                Security Groups (NSGs)</li>
-                            <li>Configured identity and access management using Azure Active Directory</li>
-                            <li>Implemented storage solutions and monitored resources using Azure Monitor</li>
-                            <li>Applied best practices for resource organization, security, and cost optimization</li>
-                            <li>Gained hands-on experience in cloud administration and infrastructure management</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- System Administration -->
-                <div class="col-lg-6 fade-in">
-                    <div class="timeline-item">
-                        <h5><i class="fas fa-briefcase gradient-text me-2"></i>System Administration Trainee (MCSA
-                            Track)
-                        </h5>
-                        <p class="timeline-date">Training Program with Mohamed Zohdy | 2025</p>
-                        <p class="timeline-date">Certificate: <a
-                                href="https://drive.google.com/file/d/1O4JOybjdNythl5QQkdeyazQORHFq98xX/view?usp=sharing"
-                                target="_blank" class="btn btn-primary">View Certificate</a></p>
-                        <ul style="color: rgba(255, 255, 255, 0.7);">
-                            <li>Installed, configured, and managed Windows Server environments</li>
-                            <li>Implemented Active Directory services including user, group, and policy management (GPO)
-                            </li>
-                            <li>Configured core network services such as DNS and DHCP</li>
-                            <li>Managed permissions, file services, and enterprise-level access control</li>
-                            <li>Performed system troubleshooting, maintenance, and performance monitoring</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Networking -->
-                <div class="col-lg-6 fade-in">
-                    <div class="timeline-item">
-                        <h5><i class="fas fa-briefcase gradient-text me-2"></i>Networking Trainee (CCNA Track)</h5>
-                        <p class="timeline-date">Training Program with Walid Saad Eldin | 2024</p>
-
-                        <ul style="color: rgba(255, 255, 255, 0.7);">
-                            <li>Configured and managed routing and switching environments</li>
-                            <li>Implemented VLANs, subnetting, and network segmentation</li>
-                            <li>Applied Access Control Lists (ACLs) for traffic filtering and security</li>
-                            <li>Designed and tested network topologies using Cisco-based environments</li>
-                            <li>Performed network troubleshooting and connectivity analysis</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 fade-in">
-                    <div class="timeline-item">
-                        <h5><i class="fas fa-briefcase gradient-text me-2"></i>Egypt Digital Pioneers Initiative(DEPI)
-                        </h5>
-                        <p class="timeline-date">July 2025 - December 2025</p>
-                        <p class="timeline-date">Certificate: <a href="./Abdelrahman Elbahnsy.pdf" target="_blank"
-                                class="btn btn-primary">View Certificate</a></p>
-                        <ul style="color: rgba(255, 255, 255, 0.7);">
-                            <li>Completed intensive hands-on training in DevOps principles and modern infrastructure
-                                practices</li>
-                            <li> Implemented CI/CD pipelines and automated deployment workflows.</li>
-                            <li>Worked with Docker and container-based environments</li>
-                            <li> Applied Infrastructure as Code concepts for scalable and consistent provisioning</li>
-                            <li>Collaborated within structured technical teams simulating real-world production
-                                environments</li>
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </section>
 
     <!-- Experience Section -->
-
-    <!-- Services Section -->
-    <section id="services" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 100px 0;">
+    <section id="experience" class="fade-in">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Offered Services</h2>
-                <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem;">What I can do for you</p>
+                <h2 class="section-title">Professional Experience</h2>
+                <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem;">My professional journey in mobile
+                    development</p>
             </div>
-            <div class="row">
-                <!-- Cloud Infrastructure -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-cloud"></i>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Experience Item 1: ITI (Left) -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2025 – Sep 2025</div>
+                        <h4 class="job-title">Flutter Development Trainee</h4>
+                        <h5 class="company-name">ITI — Information Technology Institute</h5>
+                        <p class="experience-desc">
+                            Completed an intensive mobile development training focusing on production-level Flutter
+                            applications, clean architecture (MVC/MVVM), and advanced state management (Bloc/Provider)
+                            at ITI Mansoura. Focus on writing scalable, maintainable code for complex mobile ecosystems.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                            <span class="tech-tag">Bloc</span>
+                            <span class="tech-tag">Dart</span>
                         </div>
-                        <h4>Cloud Infrastructure Deployment</h4>
-                        <p>Designing and implementing secure, scalable, and production-ready cloud infrastructures on
-                            AWS and Microsoft Azure with proper network segmentation.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Compute & VM Deployment</li>
-                            <li><i class="fas fa-check"></i> VPCs / VNets Architecture</li>
-                            <li><i class="fas fa-check"></i> IAM / Azure AD Management</li>
-                            <li><i class="fas fa-check"></i> Resource Optimization</li>
-                        </ul>
                     </div>
                 </div>
 
-                <!-- Systems Administration -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
+                <!-- Experience Item 2: NTI (Right) -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr 2025 – Jul 2025</div>
+                        <h4 class="job-title">Flutter Developer Trainee</h4>
+                        <h5 class="company-name">NTI — National Telecommunication Institute</h5>
+                        <p class="experience-desc">
+                            Hands-on training in mobile development and freelance tracks. Developed high-performance
+                            cross-platform applications, mastered REST API integration, and implemented local storage
+                            solutions while following industry-standard development workflows.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Mobile Development</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">UI/UX Design</span>
                         </div>
-                        <h4>Systems Administration</h4>
-                        <p>Professional administration of Windows Server and Linux environments with a focus on
-                            stability, security, and structured system management.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> AD & Group Policy (GPO)</li>
-                            <li><i class="fas fa-check"></i> DNS, DHCP & Core Services</li>
-                            <li><i class="fas fa-check"></i> Access & Permission Mgmt</li>
-                            <li><i class="fas fa-check"></i> Performance & Troubleshooting</li>
-                        </ul>
                     </div>
                 </div>
 
-                <!-- Network Configuration -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-network-wired"></i>
+                <!-- Experience Item 3: GDG (Left) -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr 2025 – Sep 2025</div>
+                        <h4 class="job-title">Flutter Track Participant</h4>
+                        <h5 class="company-name">GDG on Campus CIC</h5>
+                        <p class="experience-desc">
+                            Engaged with the Google Developer Group community to explore the latest trends in mobile
+                            technology and Flutter development. Participated in community-driven workshops, hackathons,
+                            and collaborative projects focusing on innovative mobile solutions.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Community Branding</span>
+                            <span class="tech-tag">Modern Web/Mobile</span>
+                            <span class="tech-tag">Collaboration</span>
+                            <span class="tech-tag">Google Ecosystem</span>
                         </div>
-                        <h4>Network Configuration & Security</h4>
-                        <p>Structured design and secure configuration of network infrastructures to ensure high
-                            availability and optimized traffic flow.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Routing & Switching</li>
-                            <li><i class="fas fa-check"></i> VLAN & Subnet Design</li>
-                            <li><i class="fas fa-check"></i> ACLs Implementation</li>
-                            <li><i class="fas fa-check"></i> Diagnostics & Optimization</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- DevOps & Automation -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-infinity"></i>
-                        </div>
-                        <h4>DevOps & Automation</h4>
-                        <p>Automating infrastructure provisioning and deployment workflows to enhance scalability and
-                            operational speed through modern practices.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> CI/CD Pipeline Design</li>
-                            <li><i class="fas fa-check"></i> Docker Containerization</li>
-                            <li><i class="fas fa-check"></i> Kubernetes Orchestration</li>
-                            <li><i class="fas fa-check"></i> Infrastructure as Code</li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">My Recent Projects</h2>
-                <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem;">Explore my portfolio of web development
-                    projects</p>
+                <h2 class="section-title">My Skills</h2>
+                <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    I don't just write code, I craft experiences, pixel by pixel
+                </p>
             </div>
-            <div class="row mt-5">
-                <!-- AWS Infrastructure Automation -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
+
+            <div class="skills-list-container">
+                <!-- Skill 01 -->
+                <div class="skill-list-item fade-in">
+                    <div class="skill-number">01</div>
+                    <div class="skill-info">
+                        <h4 class="skill-title">State Management</h4>
+                        <div class="skill-separator"></div>
+                        <p class="skill-description">
+                            Implementation of various state management solutions for optimal data flow in Flutter
+                            applications including BLoC, Cubit, Riverpod, and Provider.
+                        </p>
+                    </div>
+                    <div class="skill-icon-expand"><i class="fas fa-chevron-right"></i></div>
+                </div>
+
+                <!-- Skill 02 -->
+                <div class="skill-list-item fade-in">
+                    <div class="skill-number">02</div>
+                    <div class="skill-info">
+                        <h4 class="skill-title">Architecture & Design Patterns</h4>
+                        <div class="skill-separator"></div>
+                        <p class="skill-description">
+                            Building scalable and maintainable applications with proven architecture patterns such as
+                            Clean Architecture and MVVM.
+                        </p>
+                    </div>
+                    <div class="skill-icon-expand"><i class="fas fa-chevron-right"></i></div>
+                </div>
+
+                <!-- Skill 03 -->
+                <div class="skill-list-item fade-in">
+                    <div class="skill-number">03</div>
+                    <div class="skill-info">
+                        <h4 class="skill-title">Networking & APIs</h4>
+                        <div class="skill-separator"></div>
+                        <p class="skill-description">
+                            Creating robust communication channels between your app and external services using REST
+                            APIs, WebSockets, and Real-Time Communication.
+                        </p>
+                    </div>
+                    <div class="skill-icon-expand"><i class="fas fa-chevron-right"></i></div>
+                </div>
+
+                <!-- Skill 04 -->
+                <div class="skill-list-item fade-in">
+                    <div class="skill-number">04</div>
+                    <div class="skill-info">
+                        <h4 class="skill-title">Database & Storage</h4>
+                        <div class="skill-separator"></div>
+                        <p class="skill-description">
+                            Implementing efficient data persistence solutions for your applications with Hive,
+                            PocketBase, Firestore, and Supabase.
+                        </p>
+                    </div>
+                    <div class="skill-icon-expand"><i class="fas fa-chevron-right"></i></div>
+                </div>
+
+                <!-- Skill 05 -->
+                <div class="skill-list-item fade-in">
+                    <div class="skill-number">05</div>
+                    <div class="skill-info">
+                        <h4 class="skill-title">UI/UX Design</h4>
+                        <div class="skill-separator"></div>
+                        <p class="skill-description">
+                            Crafting beautiful, responsive, and intuitive user interfaces using Flutter widgets, custom
+                            animations, and precise pixel-perfect implementation.
+                        </p>
+                    </div>
+                    <div class="skill-icon-expand"><i class="fas fa-chevron-right"></i></div>
+                </div>
+
+                <!-- Skill 06 -->
+                <div class="skill-list-item fade-in">
+                    <div class="skill-number">06</div>
+                    <div class="skill-info">
+                        <h4 class="skill-title">Native Integration & Tools</h4>
+                        <div class="skill-separator"></div>
+                        <p class="skill-description">
+                            Leveraging native features via Platform Channels and optimizing development with Git, CI/CD,
+                            and Firebase integration.
+                        </p>
+                    </div>
+                    <div class="skill-icon-expand"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">My Projects</h2>
+                <p style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    A collection of mobile experiences built with passion and precision
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1: Tabibak -->
+                <div class="col-lg-3 col-md-6 fade-in">
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./img/aws.png" alt="AWS Infrastructure Automation" class="project-img">
-                            <div class="project-overlay">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
+                            <img src="./img/tabibak.png" alt="Tabibak" class="project-img">
                         </div>
                         <div class="project-body">
-                            <h5 class="text-white mb-2">🏗 AWS Infrastructure Automation</h5>
-                            <p class="project-description">Automated the deployment of a complete AWS environment using
-                                Infrastructure as Code principles to ensure scalability and consistency.</p>
-                            <div class="project-tech mb-3">
-                                <span class="tech-badge">Terraform</span>
-                                <span class="tech-badge">AWS</span>
-                                <span class="tech-badge">IaC</span>
+                            <h5>Tabibak</h5>
+                            <p class="project-description">A fast and reliable mobile app for booking medical
+                                appointments with doctors across all specialties.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">REST API</span>
                             </div>
-                            <!-- <div class="project-links">
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fas fa-eye me-1"></i> Live Demo
+                            <div class="project-links">
+                                <a href="https://github.com/Nourhan-mo7amed/Tabibak.git" target="_blank"
+                                    class="project-link-circle">
+                                    <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fab fa-github me-1"></i> View Code
-                                </a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Azure Infrastructure Management -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
+                <!-- Project 2: Cloozy App -->
+                <div class="col-lg-3 col-md-6 fade-in">
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./img/azure.png" alt="Azure Infrastructure Management" class="project-img">
-                            <div class="project-overlay">
-                                <i class="fas fa-cloud"></i>
-                            </div>
+                            <img src="./img/cloozy.png" alt="Cloozy App" class="project-img">
                         </div>
                         <div class="project-body">
-                            <h5 class="text-white mb-2">☁️ Azure Infrastructure Management</h5>
-                            <p class="project-description">Designed and managed structured Azure environments with
-                                secure
-                                networking, identity control, and resource monitoring.</p>
-                            <div class="project-tech mb-3">
-                                <span class="tech-badge">Azure</span>
-                                <span class="tech-badge">AD</span>
-                                <span class="tech-badge">VNet</span>
+                            <h5>Cloozy App</h5>
+                            <p class="project-description">An e-commerce platform bringing local brands together for a
+                                seamless shopping experience and easy product management.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">BLoC</span>
+                                <span class="tech-badge">REST API</span>
                             </div>
-                            <!-- <div class="project-links">
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fas fa-eye me-1"></i> Overview
+                            <div class="project-links">
+                                <a href="https://github.com/Nourhan-mo7amed/Cloozy-App.git" target="_blank"
+                                    class="project-link-circle">
+                                    <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fab fa-github me-1"></i> View Code
-                                </a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Windows Server & Hybrid Network -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
+                <!-- Project 3: Toku App -->
+                <div class="col-lg-3 col-md-6 fade-in">
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./img/network.png" alt="Windows Server Deployment" class="project-img">
-                            <div class="project-overlay">
-                                <i class="fas fa-server"></i>
-                            </div>
+                            <img src="./img/toku.png" alt="Toku App" class="project-img">
                         </div>
                         <div class="project-body">
-                            <h5 class="text-white mb-2">🖥 Windows Server & Hybrid Network</h5>
-                            <p class="project-description">Implemented a hybrid infrastructure integrating Windows
-                                Server
-                                services with structured network segmentation and access control.</p>
-                            <div class="project-tech mb-3">
-                                <span class="tech-badge">Active Directory</span>
-                                <span class="tech-badge">Networking</span>
+                            <h5>Toku App</h5>
+                            <p class="project-description">A fun and interactive app for exploring basic Japanese
+                                vocabulary, including pronunciation audio for family, numbers, and colors.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">Audio Players</span>
                             </div>
-                            <!-- <div class="project-links">
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fas fa-eye me-1"></i> Overview
+                            <div class="project-links">
+                                <a href="https://github.com/Nourhan-mo7amed/TOKU_APP.git" target="_blank"
+                                    class="project-link-circle">
+                                    <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fab fa-github me-1"></i> View Code
-                                </a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Distributed File Transfer System -->
-                <div class="col-lg-6 col-md-6 mb-4 fade-in">
+                <!-- Project 4: Wavlo App -->
+                <div class="col-lg-3 col-md-6 fade-in">
                     <div class="project-card">
                         <div class="project-img-wrapper">
-                            <img src="./img/system.png" alt="Distributed File Transfer System" class="project-img">
-                            <div class="project-overlay">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
+                            <img src="./img/wavlo.png" alt="Wavlo App" class="project-img">
                         </div>
                         <div class="project-body">
-                            <h5 class="text-white mb-2">📁 Distributed File Transfer System</h5>
-                            <p class="project-description">Developed a distributed file transfer system with real-time
-                                monitoring dashboard (100% Academic Grade).</p>
-                            <div class="project-tech mb-3">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">Sockets</span>
-                                <span class="tech-badge">Dashboard</span>
+                            <h5>Wavlo App</h5>
+                            <p class="project-description">An AI-powered app bridging communication gaps for Deaf, Mute,
+                                and hearing users through real-time speech, text, and sign language translation.</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">AI</span>
+                                <span class="tech-badge">ML</span>
+                                <span class="tech-badge">Firebase</span>
                             </div>
-                            <!-- <div class="project-links">
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fas fa-eye me-1"></i> Simulation
+                            <div class="project-links">
+                                <a href="https://github.com/Nourhan-mo7amed/Wavlo.git" target="_blank"
+                                    class="project-link-circle">
+                                    <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank" class="project-btn">
-                                    <i class="fab fa-github me-1"></i> View Code
-                                </a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="explore-btn-wrapper fade-in">
+                <a href="https://github.com/Nourhan-mo7amed" target="_blank" class="btn-explore">
+                    Explore More on GitHub <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -618,7 +524,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="fade-in">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Get In Touch</h2>
@@ -674,29 +580,36 @@
             </div>
 
             <!-- Contact Info -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-4 fade-in">
                     <div class="contact-info">
                         <i class="fas fa-envelope"></i>
                         <h5>Email</h5>
-                        <a href="mailto:abdelrahmanelbahnsy19@gmail.com"
-                            style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">abdelrahmanelbahnsy19@gmail.com</a>
+                        <a href="mailto:nourhan.moh71@gmail.com"
+                            style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">nourhan.moh71@gmail.com</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                <div class="col-lg-3 col-md-6 mb-4 fade-in">
                     <div class="contact-info">
-                        <i class="fas fa-phone"></i>
-                        <h5>Phone</h5>
-                        <a href="tel:+201028977915" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">+20
-                            102 897 7915</a>
+                        <i class="fab fa-linkedin"></i>
+                        <h5>LinkedIn</h5>
+                        <a href="https://www.linkedin.com/in/nour-maghawry/" target="_blank"
+                            style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Nourhan Maghawry</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                <div class="col-lg-3 col-md-6 mb-4 fade-in">
                     <div class="contact-info">
                         <i class="fab fa-github"></i>
                         <h5>GitHub</h5>
-                        <a href="https://github.com/AbdelrahmanElbahnsy" target="_blank"
-                            style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">AbdelrahmanElbahnsy</a>
+                        <a href="https://github.com/Nourhan-mo7amed" target="_blank"
+                            style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Nourhan-mo7amed</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 fade-in">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>Location</h5>
+                        <span style="color: rgba(255, 255, 255, 0.8);">Mansoura, Egypt</span>
                     </div>
                 </div>
             </div>
@@ -706,8 +619,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p class="mb-0">&copy; 2025 Abdelrahman Elbahnasy. All Rights Reserved. Built with <i class="fas fa-heart"
-                    style="color: #ec4899;"></i></p>
+            <p class="mb-0">&copy; 2026 Nourhan Maghawry. All Rights Reserved.</p>
         </div>
     </footer>
 
